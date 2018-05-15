@@ -1,0 +1,26 @@
+{
+  "name": "softhouse",
+  "version": "1.0.0",
+  "description": "Login into the application using the google account",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avdohusic/softhouse-task.git"
+  },
+  "author": "Avdo Husic <avdo.husic@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avdohusic/softhouse-task/issues"
+  },
+  "homepage": "https://github.com/avdohusic/softhouse-task#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "ejs-locals": "^1.0.2",
+    "ejs-mate": "^2.3.0",
+    "express": "^4.16.3",
+    "path": "^0.12.7"
+  }
+}
