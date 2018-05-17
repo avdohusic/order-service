@@ -1,15 +1,25 @@
 let authRoutes = require('./auth-rutes');
-
+let profileRoute = require('./profile');
 module.exports = function (app) {
 
+    //auth routes
     app.use('/auth', authRoutes);
 
+    //profile routes
+    app.use('/profile', profileRoute);
+
+    //public route
     app.get('/', function (req, res) {
-        res.render('pages/index', {what: 'best', headerTitle: 'softhouse'});
+        res.render('pages/index', {headerTitle: 'softhouse', user: req.user});
     });
 
-    app.get('/about', function (req, res) {
-        res.render('pages/about');
+    app.get('/login', function (req, res) {
+        res.render('pages/login', {headerTitle: 'softhouse', user: req.user});
+    });
+
+    app.get('/logout', (req, res) => {
+        req.logout();
+        res.redirect('/');
     });
 
     app.use(function (req, res) {
