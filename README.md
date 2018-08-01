@@ -8,4 +8,9 @@ Install dependencies
 
 npm install
 
-npm start
+go to src folder and simple run:
+
+node app.js
+
+*notes
+Need to start the MongoDB server.
