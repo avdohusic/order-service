@@ -1,16 +1,15 @@
-# Node project with basic Pasport implementation
+# Simple Google authentication using Passport implementation
 
-A simple node project template which use ejs (Embedded JavaScript templates) for render a couple views in the project.
+The project has divided on the public and protected part. After successful login through Google authentication, the user can access on the protected part of the site.
 
-# Useful commands
+View template has render using ejs (Embedded javaScript template)
 
-Install dependencies
+# How to start the project
 
 npm install
+
+Configure your mongo db connection in src -> config -> config.js
 
 go to src folder and simple run:
 
 node app.js
-
-*notes
-Need to start the MongoDB server.
